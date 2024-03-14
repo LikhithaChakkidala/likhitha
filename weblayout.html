@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <style>
+  header{
+   border:2px solid red;
+   background-color:black;
+   color:wight;
+   height:50px;
+   width:100%;
+  padding:20px;
+  }
+  ul{
+  float:right;
+  display:inline-flex;
+  text-decoration:none;
+  list-style-type:none;
+  }
+  ul li{
+  padding-right:10px;
+  }
+  .main{
+  display:inline-flex;
+  padding:10px;
+  border:2px solid green;
+  margin:20px;
+  }
+  .child{
+  border:1px solid blue;
+  padding:50px;
+  }
+  .main::first-line{
+  color:red;
+  flex-wrap:warp;
+  }
+  .demo{
+  display:inline-flex;
+  }
+  .ani{
+height:50px;
+width:50px;
+background-image:url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg");
+background-size:cover;
+position:absolute;
+animation-name:example;
+animation-duration:4s;
+animation-iteration-count:infinite;
+}
+@keyframes example{
+ 0%{top:95px;left:95px;}
+ 25%{top:95px;left:1300px}
+ 50%{top:350px;left:1300px;}
+ 75%{top:350px;left:95px;}
+ 100%{left:95px;top:95px;}
+}
+.app{
+position:relative;
+}
+ footer{
+   border:2px solid red;
+   background-color:black;
+   color:wight;
+   height:50px;
+   width:100%;
+  padding:20px;
+  }
+  </style>  
+</head>
+<body>
+<header>
+<img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg"height="50px" width="100px"/>
+<ul>
+<li>Home</li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+</ul>
+</header>
+<div>
+<div class="app">
+<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" height="400px" width="100%" />
+</div>
+</div>
+<h1>ABOUT</h1>
+<div class="main">
+<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" height="300px" width=200px" />
+<div class="child">
+<h1>This is child labour</h1>
+<p>The term “child labour” is often defined as work that deprives children of their childhood,<br> their potential and their dignity, and that is harmful to physical and mental development.<br> 
+It refers to work that: is mentally, physically, socially or morally dangerous and harmful to children; and/or.</p>
+</div>
+</div>
+<div>
+<h1>services</h1>
+<div class="main" id="about">
+<div class="child"><p>This is para This is para This is para This is para</p></div>
+<div class="child"><p>This is para This is para This is para This is para</p></div>
+<div class="child"><p>This is para This is para This is para This is para</p></div>
+<div class="child"><p>This is para This is para This is para This is para</p></div>
+</div>
+<h1>CONTACT</h1>
+<div class="demo" id="services">
+<img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_640.jpg" height="300px" width="300px"/>
+<div>
+<div class="information">
+<div class="input"><input type="text"placeholder="enter your name"></div>
+<div class="input"><input type="Email"placeholder="enter your Email"></div>
+<div class="input"><input type="phone number"placeholder="65409*****"></div>
+<div class="input"><input type="date"placeholder="enter your date of birth"></div>
+</div>
+</div>
+<div class="ani"></div>
+</body>
+</div>
+<footer>
+<img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg"height="50px" width="100px"/>
+<ul>
+<li>Home</li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+</ul>
+</footer>
+</html>

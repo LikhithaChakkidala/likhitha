@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>animation</title>
+<style>
+.ani{
+height:200px;
+width:200px;
+background-image:url("https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg");
+background-size:cover;
+position:absolute;
+animation-name:example;
+animation-duration:4s;
+animation-iteration-count:infinite;
+}
+@keyframes example{
+ 0%{top:0px;left:0px;}
+ 25%{top:0px;left:500px;}
+ 50%{top:500px;left:500px;}
+ 75%{top:500px;left:0px;}
+ 100%{left:0px;top:0px;}
+}
+</style>
+</head>
+<body>
+<div class="ani"></div>
+</html>

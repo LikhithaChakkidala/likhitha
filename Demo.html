@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <style>
+  header{
+   border:2px solid red;
+   background-color:black;
+   color:wight;
+   height:50px;
+   width:100%;
+   position:fixed;
+  padding:20px;
+  }
+  ul{
+  float:right;
+  display:inline-flex;
+  text-decoration:none;
+  list-style-type:none;
+  }
+  ul li{
+  padding-right:10px;
+  }
+  .main{
+  display:inline-flex;
+  padding:10px;
+  border:2px solid green;
+  margin:20px;
+  }
+  .child{
+  border:1px solid blue;
+  padding:50px;
+  }
+  .para::first-line{
+  color:red;
+  }
+  .main::first-line{
+  color:red;
+  flex-wrap:warp;
+  }
+  .one{
+  background-color:yellow;
+  height:50px;
+  width:50px;
+  position:fixed;
+  bottom:0;
+  right:0;
+  }
+  .two{
+  height:200px;
+  background-color:red;
+  position:relative;
+  margin-top:10px;
+  }
+  .three{
+  height:100px;
+  background-color:green;
+  position:absolute:
+  top:0;
+  }
+  </style>  
+</head>
+<body>
+<header>
+<img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg"height="50px" width="100px"/>
+<ul>
+<li>Home</li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+</ul>
+</header>
+<div class="main">
+<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" height="300px" width=200px" />
+<div class="child">
+<h1>This is child labour</h1>
+<p>The term “child labour” is often defined as work that deprives children of their childhood,<br> their potential and their dignity, and that is harmful to physical and mental development.<br> 
+It refers to work that: is mentally, physically, socially or morally dangerous and harmful to children; and/or.</p>
+</div>
+</div>
+<div>
+<h1>section</h1>
+<div class="main" id="about">
+<div class="child">1</div>
+<div class="child">2</div>
+<div class="child">3</div>
+<div class="child">4</div>
+</div>
+<div class="para" id="services">
+<h1>Welcome to tmf</h1>
+<p>This is paragraph</p>
+<p>This is paragraph</p>
+<p>This is paragraph</p>
+<p>This is paragraph</p>
+</div>
+<div class="one"><a href="#">click</a></div>
+<div class="two"><a href="#">
+<img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"height="100px"/>
+<img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"height="100px"/>
+</div>
+<div>hello</div>
+</body>
+</html>
